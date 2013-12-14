@@ -1,0 +1,18 @@
+
+sci-mathematics/isabelle CCL CTT Cube FOL FOLP HOL LCF Pure Sequents ZF
+
+sci-mathematics/nauty doc
+sci-mathematics/minisat doc extended-solver
+sci-mathematics/maxima -sbcl clozurecl
+sci-mathematics/agda epic
+sci-mathematics/coq gtk
+app-office/teapot -fltk
+#sci-libs/vtk qt4
+sci-libs/hdf5 -cxx -threads
+
+sci-mathematics/scilab examples
+sci-libs/openfoam doc examples
+sci-libs/blas-atlas doc
+sci-libs/lapack-atlas doc
+sci-libs/gsl cblas-external
+

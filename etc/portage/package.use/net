@@ -1,0 +1,37 @@
+
+www-plugins/mozplugger xembed
+mail-client/mutt berkdb imap smtp sasl pop zlib
+net-libs/rb_libtorrent doc
+
+app-crypt/pinentry gtk
+www-plugins/adobe-flash nspluginwrapper
+www-servers/lighttpd doc fastcgi mysql
+net-wireless/kismet ncurses
+net-voip/ekiga h323
+net-libs/ptlib wav
+net-libs/opal h323 sip sipim
+
+net-libs/libmicrohttpd messages
+
+dev-libs/apr-util mysql postgres nss
+dev-lang/php apache2 cgi libmysqlclient mhash mysql mysqli pdo postgres sockets zip
+app-admin/eselect-php apache2
+
+net-irc/irssi perl
+net-analyzer/wireshark gtk
+net-analyzer/metasploit gui postgres
+net-analyzer/nmap gtk
+net-analyzer/driftnet gtk
+net-misc/aria2 bittorrent
+www-client/elinks ftp javascript
+sys-fs/ntfsprogs fuse
+net-proxy/tsocks tordns
+net-im/pidgin spell xscreensaver
+www-client/firefox java -wifi
+net-libs/xulrunner java -wifi
+
+net-misc/tigervnc server
+
+net-im/ejabberd captcha ldap mod_irc mod_muc mod_pubsub mod_statsdx
+
+

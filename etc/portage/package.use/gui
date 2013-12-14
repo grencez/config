@@ -1,0 +1,6 @@
+
+x11-libs/libX11 doc
+
+x11-wm/xmonad -default-term
+x11-libs/gtk+ -vim-syntax
+

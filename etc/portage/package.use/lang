@@ -1,0 +1,14 @@
+
+dev-java/icedtea jbootstrap
+dev-lisp/clozurecl doc
+dev-lang/maude doc
+dev-lang/ghc doc
+dev-lisp/clisp new-clx gtk
+dev-lisp/sbcl ldb
+dev-scheme/guile regex threads networking
+
+dev-lang/erlang sctp
+dev-lang/gnu-smalltalk gtk
+
+dev-ruby/activerecord postgres sqlite3
+

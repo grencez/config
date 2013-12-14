@@ -1,0 +1,40 @@
+dev-qt/qt-mobility multimedia
+app-emacs/slime doc
+dev-ml/lablgtk sourceview
+
+# tk for media-gfx/asymptote
+dev-lang/python tk
+
+dev-util/oprofile -qt4
+dev-libs/libxml2 python
+sys-libs/glibc profile
+dev-libs/libpcre static-libs
+dev-lang/icc ipp mkl
+net-misc/tightvnc server
+dev-libs/boost doc python tools
+sys-devel/llvm multitarget clang gold ocaml
+sys-devel/clang multitarget
+sys-devel/gcc doc graphite lto objc
+
+sys-devel/gdb python
+dev-qt/qt-creator cmake git subversion valgrind
+
+app-editors/vim cscope perl python vim-pager
+app-editors/gvim cscope gtk perl python
+x11-terms/rxvt-unicode vanilla truetype iso14755
+
+dev-vcs/git curl cvs perl
+
+app-doc/doxygen -latex
+dev-java/antlr cxx doc java examples -python
+dev-lang/cilk doc examples
+
+dev-cpp/gtkmm accessibility
+dev-vcs/subversion -dso perl
+dev-lang/swig clisp
+
+sys-apps/util-linux static-libs
+dev-libs/popt static-libs
+
+dev-libs/starpu gcc-plugin doc examples qt4
+

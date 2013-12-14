@@ -1,0 +1,11 @@
+
+sys-fs/cryptsetup static static-libs
+sys-libs/e2fsprogs-libs static-libs
+sys-fs/lvm2 static-libs
+
+sys-libs/zlib minizip
+sys-fs/udev gudev keymap static-libs
+virtual/udev gudev keymap static-libs
+sys-apps/systemd cryptsetup gudev keymap openrc
+
+

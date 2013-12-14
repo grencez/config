@@ -1,0 +1,37 @@
+
+app-emulation/wine -opencl
+media-gfx/k3d imagemagick
+sci-visualization/paraview boost
+sci-libs/vtk boost
+#sci-astronomy/stellarium stars
+
+sys-fs/lvm2 -lvm1
+sys-fs/udev extras
+
+sci-mathematics/glpk gmp
+sys-cluster/openmpi mpi-threads heterogeneous romio
+virtual/mpi romio
+dev-games/cegui devil
+media-gfx/sane-backends usb
+games-emulation/visualboyadvance gtk
+app-text/ghostscript-gpl gtk
+
+app-office/lyx dia dot latex
+dev-tex/tex4ht java
+
+sys-kernel/gentoo-sources -symlink
+
+app-office/dia cairo
+
+media-gfx/graphviz doc examples
+sci-visualization/gnuplot gd
+
+app-office/libreoffice gtk
+dev-db/hsqldb java6
+dev-db/sqlite extensions fts3 secure-delete
+
+dev-libs/lzo static-libs
+dev-libs/libgcrypt static-libs
+dev-libs/libgpg-error static-libs
+sys-fs/cryptsetup udev
+

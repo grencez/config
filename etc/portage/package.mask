@@ -1,7 +1,15 @@
 
-#>x11-libs/qt-test-4.7.2
 >=sys-kernel/linux-headers-3.11
 >=sci-mathematics/isabelle-2013
-#>=www-servers/tomcat-7
+app-vim/gtk-syntax
 
+dev-lang/ruby
+dev-ruby/rubygems
+virtual/rubygems
+dev-ruby/rdbc
+dev-ruby/rdoc
+dev-ruby/racc
+dev-ruby/rake
+dev-ruby/json
+dev-util/ragel
 

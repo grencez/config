@@ -1,6 +1,7 @@
 
 sci-mathematics/isabelle CCL CTT Cube FOL FOLP HOL LCF Pure Sequents ZF
 
+sci-libs/buddy static-libs
 sci-mathematics/nauty doc
 sci-mathematics/minisat doc extended-solver
 sci-mathematics/maxima -sbcl clozurecl

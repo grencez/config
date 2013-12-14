@@ -1,0 +1,11 @@
+
+[user]
+	name = Alex Klinkhamer
+	email = grencez@codelove.org
+
+[merge]
+	tool = vimdiff
+
+[push]
+	default = matching
+

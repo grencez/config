@@ -1,0 +1,15 @@
+
+" autoignore mode on certain pages
+:autocmd PageLoad .* :js modes.passAllKeys = /gmail\.com/.test(buffer.URL)
+
+set messagetimeout=0
+set ds=
+set showtabline=1
+set autocomplete=false
+"set toolbars=none,tabs
+"set showstatuslinks=2
+set wildmode=""
+
+echo "vimperatorrc sourced"
+
+" vim: ft=vimperator:

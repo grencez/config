@@ -1,19 +1,16 @@
 
-app-emulation/wine -opencl
 media-gfx/k3d imagemagick
 sci-visualization/paraview boost
 sci-libs/vtk boost
 #sci-astronomy/stellarium stars
 
 sys-fs/lvm2 -lvm1
-sys-fs/udev extras
 
 sci-mathematics/glpk gmp
 sys-cluster/openmpi mpi-threads heterogeneous romio
 virtual/mpi romio
 dev-games/cegui devil
 media-gfx/sane-backends usb
-games-emulation/visualboyadvance gtk
 app-text/ghostscript-gpl gtk
 
 app-office/lyx dia dot latex

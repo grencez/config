@@ -1,0 +1,3 @@
+
+setlocal sw=1
+

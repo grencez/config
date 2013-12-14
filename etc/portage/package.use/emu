@@ -1,3 +1,5 @@
 
+games-emulation/visualboyadvance gtk
+app-emulation/wine -opencl -udisks
 app-emulation/qemu doc
 

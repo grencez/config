@@ -12,7 +12,6 @@ media-libs/libmtp
 dev-python/imaging
 media-gfx/asymptote
 #app-text/poppler
-www-plugins/google-talkplugin
 dev-libs/fribidi
 media-gfx/aoi
 media-libs/libass

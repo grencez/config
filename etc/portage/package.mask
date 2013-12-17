@@ -11,5 +11,4 @@ dev-ruby/rdoc
 dev-ruby/racc
 dev-ruby/rake
 dev-ruby/json
-dev-util/ragel
 

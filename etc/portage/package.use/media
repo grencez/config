@@ -1,4 +1,5 @@
 
+app-text/poppler qt4
 app-text/tesseract osd
 app-misc/gcstar spell stats
 app-text/evince dvi t1lib

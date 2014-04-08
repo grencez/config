@@ -5,8 +5,8 @@ dev-ruby/liquid
 dev-qt/qt-mobility
 dev-util/peg
 
-sys-devel/clang
-sys-devel/llvm
+#sys-devel/clang
+#sys-devel/llvm
 dev-embedded/scratchbox
 dev-lang/regina-rexx
 #dev-util/oprofile
@@ -20,7 +20,6 @@ dev-lang/icc
 app-vim/conque
 dev-util/xmlindent
 
-sys-devel/clang
 #sys-devel/llvm-gcc
 
 #sys-devel/binutils

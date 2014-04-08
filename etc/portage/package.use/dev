@@ -1,3 +1,5 @@
+
+dev-libs/elfutils static-libs
 dev-qt/qt-mobility multimedia
 app-emacs/slime doc
 dev-ml/lablgtk sourceview
@@ -12,8 +14,8 @@ dev-libs/libpcre static-libs
 dev-lang/icc ipp mkl
 net-misc/tightvnc server
 dev-libs/boost doc python tools
-sys-devel/llvm multitarget clang gold ocaml
-sys-devel/clang multitarget
+sys-devel/llvm multitarget clang gold ocaml python
+sys-devel/clang multitarget python
 sys-devel/gcc doc graphite lto objc
 
 sys-devel/gdb python
@@ -21,6 +23,7 @@ dev-qt/qt-creator cmake git subversion valgrind
 
 app-editors/vim cscope perl python vim-pager
 app-editors/gvim cscope gtk perl python
+app-editors/vifm vim gtk
 x11-terms/rxvt-unicode vanilla truetype iso14755
 
 dev-vcs/git curl cvs perl

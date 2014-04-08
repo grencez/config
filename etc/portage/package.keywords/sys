@@ -1,5 +1,5 @@
 
+=sys-block/thin-provisioning-tools-0.2.8-r1
 sys-fs/unionfs-fuse
 dev-libs/glib
-=sys-block/thin-provisioning-tools-0.2.8-r1
 

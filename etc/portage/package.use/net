@@ -1,4 +1,9 @@
 
+dev-libs/leveldb -snappy
+net-misc/bfgminer cpumining scrypt
+net-fs/cifs-utils ads
+net-fs/samba winbind
+
 www-plugins/mozplugger xembed
 mail-client/mutt berkdb imap smtp sasl pop zlib
 net-libs/rb_libtorrent doc
@@ -13,10 +18,6 @@ net-libs/opal h323 sip sipim
 
 net-libs/libmicrohttpd messages
 
-dev-libs/apr-util mysql postgres nss
-dev-lang/php apache2 cgi libmysqlclient mhash mysql mysqli pdo postgres sockets zip
-app-admin/eselect-php apache2
-
 net-irc/irssi perl
 net-analyzer/wireshark gtk
 net-analyzer/metasploit gui postgres
@@ -30,8 +31,9 @@ net-im/pidgin spell xscreensaver
 www-client/firefox java -wifi
 net-libs/xulrunner java -wifi
 
-net-misc/tigervnc server
+net-libs/webkit-gtk perl python
 
-net-im/ejabberd captcha ldap mod_irc mod_muc mod_pubsub mod_statsdx
+net-misc/rdesktop kerberos
 
+net-misc/tor transparent-proxy web
 

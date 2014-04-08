@@ -6,6 +6,5 @@ sys-fs/lvm2 static-libs
 sys-libs/zlib minizip
 sys-fs/udev gudev keymap static-libs
 virtual/udev gudev keymap static-libs
-sys-apps/systemd cryptsetup gudev keymap openrc
-
+sys-libs/talloc python
 

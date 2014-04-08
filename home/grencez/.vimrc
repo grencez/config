@@ -2,7 +2,7 @@
 set nocompatible "< No vi bugs
 
 if exists("g:vimrcsourced")
-    finish
+  finish
 endif
 let g:vimrcsourced = 1
 
@@ -10,13 +10,13 @@ filetype on
 filetype plugin indent on
 
 if &term =~ ".*rxvt"
-    "colorscheme elisex
-    colorscheme grencez
+  "colorscheme elisex
+  colorscheme grencez
 elseif &term == "xterm"
-    "colorscheme default
-    colorscheme grencez
+  "colorscheme default
+  colorscheme grencez
 else
-	colorscheme default
+  colorscheme default
 endif
 
 set bs=2 "< Enable backspace while insert
@@ -33,6 +33,7 @@ set hls "< Turn off highlight after search
 set incsearch "< Incremental searching
 set lazyredraw "< No redraw when executing macros
 "set nowrap "< No line wrap
+"set wrapscan "< on by default
 set wrap lbr
 set tabstop=2 "< Tab width
 set shiftwidth=2
@@ -103,6 +104,18 @@ let g:slimv_impl = 'sbcl'
 let g:lisp_rainbow = 1
 "let g:slimv_debug_client = 1
 let g:slimv_client = 'python ~/.vim/ftplugin/slimv.py -r "mrxvt -T Slimv -e @p @s -l /home/grencez/acl2-sources/saved_acl2 -s"'
+
+" Search for selected text, forwards or backwards.
+vnoremap <silent> * :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy/<C-R><C-R>=substitute(
+  \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gV:call setreg('"', old_reg, old_regtype)<CR>
+vnoremap <silent> # :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy?<C-R><C-R>=substitute(
+  \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gV:call setreg('"', old_reg, old_regtype)<CR>
 
 " fix meta-keys which generate <Esc>a .. <Esc>z
 "let c='a'

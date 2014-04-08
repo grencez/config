@@ -1,4 +1,8 @@
 
+net-p2p/litecoin-qt
+net-p2p/primecoin-qt
+net-misc/bfgminer
+net-libs/libblkmaker
 net-im/skype
 www-plugins/mozplugger
 www-client/surf

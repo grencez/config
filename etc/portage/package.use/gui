@@ -1,6 +1,7 @@
 
 x11-libs/libX11 doc
 
+media-libs/mesa -opencl
 x11-wm/xmonad -default-term
 x11-libs/gtk+ -vim-syntax
 

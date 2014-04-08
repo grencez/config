@@ -1,5 +1,6 @@
 
 sci-mathematics/isabelle CCL CTT Cube FOL FOLP HOL LCF Pure Sequents ZF
+sci-mathematics/spin graphviz tk
 
 sci-libs/buddy static-libs
 sci-mathematics/nauty doc

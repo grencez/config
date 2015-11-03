@@ -1,0 +1,95 @@
+# vim:syntax=apparmor
+
+#include <tunables/global>
+
+/usr/{lib*/firefox,bin}/firefox{,-bin} {
+
+  #include <abstractions/gui>
+  #include <abstractions/nameservice>
+  #include <abstractions/ssl_certs>
+
+  # Launcher
+  /dev/tty* rw,
+  /usr/{lib*/firefox,bin}/firefox{,-bin} rix,
+  /usr/lib*/xulrunner/xulrunner-stub ix,
+
+  owner @{HOME}/Downloads/ rw,
+  owner @{HOME}/Downloads/** rw,
+  owner @{HOME}/Desktop/** rw,
+  owner @{HOME}/.mozilla/firefox/** rwk,
+  owner @{HOME}/.cache/mozilla/ rw,
+  owner @{HOME}/.cache/mozilla/firefox/ rw,
+  owner @{HOME}/.cache/mozilla/firefox/** rwk,
+  owner @{HOME}/.cache/gstreamer-*/ rw,
+  owner @{HOME}/.cache/gstreamer-*/** rw,
+
+  owner @{HOME}/.mozilla/plugins/ r,
+  owner @{HOME}/.mozilla/plugins/** mr,
+  owner @{HOME}/.mozilla/firefox/*/extensions/** m,
+  owner @{HOME}/.mozilla/extensions/** mr,
+
+  /usr/share/ r,
+  /usr/share/alsa/** r,
+  /usr/share/applications/screensavers/ r,
+  owner @{HOME}/.asoundrc r,
+
+  owner @{PROC}/@{pid}/fd/ r,
+  owner @{PROC}/@{pid}/mountinfo r,
+  owner @{PROC}/@{pid}/statm r, # for about:memory
+  owner @{PROC}/@{pid}/task/[0-9]*/stat r,
+  owner @{PROC}/@{pid}/stat r,
+
+  # Minor udev stuff
+  /etc/udev/udev.conf r,
+  /sys/devices/pci**/uevent r,
+  /run/udev/data/* r,
+  /sys/bus/ r,
+  /sys/class/ r,
+  /sys/devices/system/cpu/present r,
+
+  # Sound!
+  /dev/snd/* rw,
+
+  # Used in private mode
+  /usr/@{multiarch}bin/shred ix,
+
+  ## Site-local paths
+  # Images in file selection dialogs
+  owner @{HOME}/.thumbnails/** rw,
+
+  /usr/@{libabi}/firefox/plugin-container cx -> plugin_container,
+
+  profile plugin_container {
+    #include <abstractions/nameservice>
+    #include <abstractions/consoles>
+    #include <abstractions/gnome>
+    #include <abstractions/openssl>
+
+    deny @{PROC}/@{pid}/fd/ r,
+    deny @{PROC}/uptime r,
+    deny @{PROC}/@{pid}/smaps r,
+
+    deny /etc/passwd r,
+    deny @{HOME}/.mozilla/firefox/** r,
+
+    owner @{HOME}/.adobe/Flash_Player/{,**} rw,
+    owner @{HOME}/.macromedia/{,**} rw,
+    owner @{HOME}/.mozilla/plugins/ r,
+    owner @{HOME}/.mozilla/plugins/** mr,
+
+    deny /bin/bash x, # execve("/bin/sh", ["sh", "-c", "ps x | grep netscape"])
+    deny @{PROC}/@{pid}/cmdline r,
+
+    # VDPAU
+    /etc/adobe/mms.cfg r,
+    /etc/vdpau_wrapper.cfg r,
+    /etc/udev/udev.conf r,
+    /sys/devices/pci**/uevent r,
+    /run/udev/data/+pci* r,
+
+    ## Site-local paths
+    /etc/core/app/X/* r,
+    /etc/core/app/sec/openssl.cnf r,
+  }
+
+}

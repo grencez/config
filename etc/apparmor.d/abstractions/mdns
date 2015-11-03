@@ -1,0 +1,4 @@
+
+# mdnsd
+/etc/nss_mdns.conf r,
+/{,var/}run/mdnsd w,

@@ -1,0 +1,12 @@
+# vim:syntax=apparmor
+
+#include <abstractions/base>
+#include <abstractions/fonts>
+#include <abstractions/gnome>
+#include <abstractions/X>
+#include <abstractions/dconf>
+#include <abstractions/freedesktop.org>
+
+owner @{dconfuser} w,
+/usr/lib*/mesa/*.so m,
+

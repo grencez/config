@@ -1,0 +1,47 @@
+
+#include <tunables/global>
+
+#define this to be where syslog-ng is chrooted
+@{CHROOT_BASE}=""
+
+/{,**/}sbin/syslog-ng {
+  #include <abstractions/base>
+  #include <abstractions/consoles>
+  #include <abstractions/nameservice>
+  #include <abstractions/mysql>
+
+  capability chown,
+  capability dac_override,
+  capability dac_read_search,
+  capability fsetid,
+  capability fowner,
+  capability sys_tty_config,
+  capability sys_resource,
+  capability syslog,
+  deny capability sys_ptrace,
+
+  /dev/log w,
+  /dev/syslog w,
+  /dev/tty* rw,
+  /dev/kmsg ra,
+  /dev/xconsole rw,
+  /etc/syslog-ng/** r,
+  @{PROC}/kmsg r,
+  @{PROC}/uptime r,
+  @{PROC}/@{pid}/** r,
+  /etc/hosts.deny r,
+  /etc/hosts.allow r,
+  /sbin/syslog-ng mr,
+  /sys/devices/system/cpu/online r,
+  /usr/share/syslog-ng/** r,
+  /usr/share/include/scl/ r,
+  /usr/share/include/scl/** r,
+  # chrooted applications
+  @{CHROOT_BASE}/var/lib/*/dev/log w,
+  @{CHROOT_BASE}/var/lib/syslog-ng/syslog-ng.persist* rw,
+  @{CHROOT_BASE}/var/log/** w,
+  @{CHROOT_BASE}/{,var/}run/syslog-ng.pid krw,
+  @{CHROOT_BASE}/{,var/}run/syslog-ng.ctl rw,
+  /{var/,}run/syslog-ng/additional-log-sockets.conf r,
+}
+

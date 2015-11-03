@@ -1,0 +1,31 @@
+# vim:syntax=apparmor
+
+#include <tunables/global>
+
+/opt/{bin/,dropbox/}dropbox* {
+  #include <abstractions/gui>
+  #include <abstractions/nameservice>
+
+  deny capability sys_ptrace,
+
+  /opt/{bin/,dropbox/}dropbox* rix,
+
+  /opt/dropbox/{,**} mrix,
+
+  /bin/* rmix,
+  /sbin/ldconfig rmix,
+  /usr/bin/* rmix,
+
+  /dev/pts/* rw,
+  /dev/tty* rw,
+  /etc/lsb-release r,
+  /proc/ r,
+  /proc/version r,
+  /proc/@{pid}/fd/{,*} r,
+  /proc/@{pid}/stat r,
+
+  owner @{HOME}/.dropbox/{,**} rwk,
+  owner @{HOME}/.dropbox-dist/{,**} rwix,
+  owner @{HOME}/Dropbox/{,**} rwk,
+}
+

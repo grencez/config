@@ -1,0 +1,17 @@
+
+# vim:syntax=apparmor
+
+#include <tunables/global>
+
+/**/bin/acroread {
+  #include <abstractions/gui>
+
+  /**/bin/acroread rix,
+
+  /opt/Adobe/** mrix,
+
+  owner @{HOME}/.adobe/Acrobat/{,**} rw,
+  owner @{HOME}/Desktop/{,**} rw,
+  owner @{HOME}/Downloads/{,**} rw,
+}
+

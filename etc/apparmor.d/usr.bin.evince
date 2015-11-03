@@ -1,0 +1,20 @@
+# vim:syntax=apparmor
+
+#include <tunables/global>
+
+/usr/bin/evince {
+  #include <abstractions/gui>
+
+  deny network,
+
+  /usr/bin/evince rix,
+
+  owner @{HOME}/[^.]* r,
+  owner @{HOME}/[^.]*/** r,
+  owner @{HOME}/Desktop/* rw,
+
+  owner @{HOME}/.config/evince/** rw,
+
+  /usr/share/evince/** r,
+  /usr/share/poppler/** r,
+}

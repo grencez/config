@@ -1,0 +1,15 @@
+# vim:syntax=apparmor
+
+#include <abstractions/icon>
+#include <abstractions/mime>
+
+# system configuration
+/usr/share/glib-*/schemas/* r,
+/usr/share/myspell/ r,
+/usr/share/myspell/** r,
+
+# per-user configurations
+owner @{HOME}/.recently-used.xbel*    rw,
+owner @{HOME}/.local/share/recently-used.xbel* rw,
+owner @{HOME}/.config/user-dirs.dirs  r,
+

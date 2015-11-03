@@ -1,0 +1,3 @@
+
+# @{PROC} is the location where procfs is mounted.
+@{PROC}=/proc/

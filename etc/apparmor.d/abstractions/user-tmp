@@ -1,0 +1,11 @@
+
+# per-user tmp directories
+owner @{HOME}/tmp/**  rwkl,
+owner @{HOME}/tmp/    rw,
+
+# global tmp directories
+owner /var/tmp/**     rwkl,
+/var/tmp/             rw,
+owner /tmp/**         rwkl,
+/tmp/                 rw,
+

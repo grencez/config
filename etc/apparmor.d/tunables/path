@@ -1,0 +1,6 @@
+
+@{libabi}=lib{,32,64}
+@{bin}=bin usr/bin usr/local/bin opt/bin
+@{sbin}=sbin usr/sbin usr/local/sbin
+@{PATH}=/@{bin} /@{sbin} ${HOME}/bin
+

@@ -1,0 +1,5 @@
+
+@{dconfuser}=/{,var/}run/user/*/dconf/user
+@{dconfuser}+= @{HOME}/.config/dconf/user
+@{dconfuser}+= @{HOME}/.cache/dconf/user
+

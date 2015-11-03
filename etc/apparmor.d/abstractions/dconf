@@ -1,0 +1,7 @@
+# vim:syntax=apparmor
+
+# permissions for querying dconf settings; granting write access should
+# be specified in a specific application's profile.
+
+owner @{dconfuser} r,
+

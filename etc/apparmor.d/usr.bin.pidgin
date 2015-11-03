@@ -1,0 +1,21 @@
+# vim:syntax=apparmor
+
+#include <tunables/global>
+
+/usr/bin/pidgin {
+  #include <abstractions/gui>
+  #include <abstractions/nameservice>
+  #include <abstractions/ssl_certs>
+
+  deny capability sys_ptrace,
+
+  /usr/bin/pidgin rix,
+  /usr/@{libabi}/purple-*/** m,
+  /usr/@{libabi}/pidgin/** m,
+  /usr/share/enchant/** r,
+
+  owner @{HOME}/Desktop/* rw,
+  owner @{HOME}/.purple/** rw,
+  owner @{HOME}/.config/enchant/ rwk,
+  owner @{HOME}/.config/enchant/** rwk,
+}

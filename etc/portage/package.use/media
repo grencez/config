@@ -14,6 +14,7 @@ media-libs/libpng apng
 media-sound/abcde id3 lame
 media-sound/prokyon3 musicbrainz taglib
 media-video/mplayer aalib dga gmplayer libcaca
+
 media-video/vlc a52 cdda cddax dvd id3tag libcaca rtsp
 
 media-video/lives libvisual
@@ -24,6 +25,11 @@ media-video/mjpegtools gtk
 media-sound/sox encode id3tag
 media-libs/sdl-mixer mikmod mod mad
 media-libs/mesa motif openvg osmesa gles2
-media-libs/libcaca doc imlib
+media-libs/libcaca imlib
 media-gfx/xsane gimp
+media-gfx/gimp -webkit
+
+media-libs/libvpx postproc
+
+media-video/ffmpeg bluray fontconfig libv4l openssl opus vpx webp x265 xcb xvid
 

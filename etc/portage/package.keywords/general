@@ -10,7 +10,6 @@ app-emulation/simh
 sys-apps/baselayout
 
 x11-wm/fluxbox
-sys-libs/ncurses
 
 x11-misc/xkbd
 sys-fs/ddrescue
@@ -21,7 +20,4 @@ sys-fs/cdfs
 app-misc/when
 app-laptop/tp_smapi
 app-laptop/hdaps-gl
-
-#app-emulation/wine
-app-emulation/winetricks
 

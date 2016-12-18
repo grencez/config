@@ -1,7 +1,9 @@
 
+media-gfx/xdot
+
 media-libs/alsa-lib
 app-text/diffpdf
-<=media-libs/libpng-1.6.6
+media-libs/libpng
 media-gfx/scantailor
 app-text/unpaper
 app-text/pdfsandwich
@@ -16,7 +18,7 @@ media-gfx/asymptote
 #app-text/poppler
 dev-libs/fribidi
 media-gfx/aoi
-media-libs/libass
+#media-libs/libass
 media-video/camsource
 media-video/came
 media-video/lives
@@ -29,13 +31,10 @@ media-libs/libv4l
 media-video/cinelerra
 media-libs/openal
 media-libs/plib
-media-libs/harfbuzz
+#media-libs/harfbuzz
 
 app-text/xournal
 app-text/pdfgrep
-#app-text/evince
-=app-text/evince-3.6.1
-app-text/apvlv
 
 #virtual/jpeg:62
 =virtual/jpeg-0-r2

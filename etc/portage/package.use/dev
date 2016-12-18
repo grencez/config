@@ -3,6 +3,7 @@ dev-libs/elfutils static-libs
 dev-qt/qt-mobility multimedia
 app-emacs/slime doc
 dev-ml/lablgtk sourceview
+dev-lang/mono minimal
 
 # tk for media-gfx/asymptote
 dev-lang/python tk
@@ -10,16 +11,18 @@ dev-lang/python tk
 dev-util/oprofile -qt4
 dev-libs/libxml2 python
 sys-libs/glibc profile
-dev-libs/libpcre static-libs
+dev-libs/glib static-libs
+dev-libs/libpcre static-libs pcre16
 dev-lang/icc ipp mkl
 net-misc/tightvnc server
 dev-libs/boost doc python tools
-sys-devel/llvm multitarget clang gold ocaml python
+sys-devel/llvm multitarget clang gold python
 sys-devel/clang multitarget python
 sys-devel/gcc doc graphite lto objc
 
 sys-devel/gdb python
 dev-qt/qt-creator cmake git subversion valgrind
+dev-util/cmake qt4 qt5
 
 app-editors/vim cscope perl python vim-pager
 app-editors/gvim cscope gtk perl python
@@ -38,6 +41,13 @@ dev-lang/swig clisp
 
 sys-apps/util-linux static-libs
 dev-libs/popt static-libs
+dev-libs/nettle static-libs
 
 dev-libs/starpu gcc-plugin doc examples qt4
+
+dev-embedded/arduino doc examples
+
+app-text/asciidoc python_single_target_python2_7
+
+dev-python/PyQt5 gui widgets
 

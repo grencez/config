@@ -1,6 +1,9 @@
 
 dev-lang/maude
 
+dev-lang/rust
+app-eselect/eselect-rust
+
 dev-lisp/clozurecl
 dev-scheme/plt-scheme
 app-shells/scsh
@@ -25,15 +28,20 @@ dev-lisp/cl-rfc2388
 dev-lisp/cl-trivial-gray-streams
 dev-lisp/cl-who
 
+dev-lang/go
+
 dev-ruby/msgpack
 dev-ruby/kissfft
 
-app-admin/eselect-java
+app-eselect/eselect-java
 dev-java/java-config
 sys-apps/baselayout-java
 #virtual/jdk:1.7
 #virtual/jre:1.7
 #dev-java/icedtea:6
 dev-java/icedtea:6
-dev-java/icedtea-web:6
+dev-java/icedtea:7
+dev-java/icedtea-web
+#dev-java/icedtea-web:6
+#dev-java/icedtea-web:7
 

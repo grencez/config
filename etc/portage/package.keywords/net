@@ -8,21 +8,23 @@ www-plugins/mozplugger
 www-client/surf
 net-p2p/mktorrent
 
+app-crypt/letsencrypt
+
 net-libs/opal
 net-libs/ptlib
 net-voip/ekiga
 
 dev-libs/json-glib
 net-wireless/rfkill
-net-misc/aria2
+#net-misc/aria2
 #net-misc/tor
 #net-im/pidgin
 www-plugins/libflashsupport
 
-www-client/firefox
+#<=www-client/firefox-43.0
 #mail-client/thunderbird
-=dev-libs/nspr-4.10.2
-=dev-libs/nss-3.15.3
+#=dev-libs/nspr-4.11
+www-client/google-chrome
 
 net-analyzer/openvas
 net-analyzer/openvas-libraries
@@ -41,4 +43,7 @@ net-libs/libnids
 net-misc/proxychains
 net-analyzer/driftnet
 net-fs/curlftpfs
+www-plugins/google-talkplugin
+#net-libs/webkit-gtk
+net-misc/dropbox
 

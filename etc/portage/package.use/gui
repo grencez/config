@@ -1,7 +1,10 @@
 
-x11-libs/libX11 doc
+#x11-libs/libX11 doc
 
-media-libs/mesa -opencl
+media-libs/mesa -opencl -video_cards_intel
 x11-wm/xmonad -default-term
 x11-libs/gtk+ -vim-syntax
+xfce-base/thunar exif
+x11-libs/libxcb xkb
+x11-libs/cairo xcb
 

@@ -1,5 +1,17 @@
 
-=sys-block/thin-provisioning-tools-0.2.8-r1
 sys-fs/unionfs-fuse
-dev-libs/glib
+sys-cluster/openmpi
+sys-apps/hwloc
+
+#dev-libs/glib
+#dev-util/gdbus-codegen
+# For lxc
+sys-process/criu
+#app-admin/cgmanager
+#sys-libs/libnih
+
+sys-apps/apparmor
+sys-libs/libapparmor
+sys-apps/apparmor-utils
+sec-policy/apparmor-profiles
 

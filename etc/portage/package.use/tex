@@ -1,4 +1,5 @@
 
+app-text/texlive-core xetex
 app-text/texlive dvi2tty dvipdfm extra graphics pstricks science tex4ht
 app-emacs/auctex preview-latex
 

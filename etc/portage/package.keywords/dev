@@ -5,8 +5,6 @@ dev-ruby/liquid
 dev-qt/qt-mobility
 dev-util/peg
 
-#sys-devel/clang
-#sys-devel/llvm
 dev-embedded/scratchbox
 dev-lang/regina-rexx
 #dev-util/oprofile
@@ -20,7 +18,10 @@ dev-lang/icc
 app-vim/conque
 dev-util/xmlindent
 
-#sys-devel/llvm-gcc
+sys-libs/libcxx
+sys-libs/libcxxrt
+#sys-devel/llvm
+#sys-devel/clang
 
 #sys-devel/binutils
 dev-lang/cilk
@@ -32,8 +33,11 @@ dev-util/cflow
 dev-perl/Gtk2-MozEmbed
 
 #dev-libs/nspr
-#dev-libs/nss
-#dev-db/sqlite
+dev-db/sqlite
+dev-db/mariadb
+virtual/mysql
 dev-util/valkyrie
 dev-util/valgrind
+dev-db/soci
+dev-embedded/openocd
 

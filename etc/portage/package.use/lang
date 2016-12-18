@@ -1,4 +1,7 @@
 
+app-text/enchant aspell
+
+dev-lang/rust clang -system-llvm libcxx
 dev-java/icedtea jbootstrap
 dev-lisp/clozurecl doc
 dev-lang/maude doc

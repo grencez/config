@@ -23,3 +23,10 @@ sci-libs/parmgridgen
 sci-libs/scotch
 sci-libs/parmetis
 
+sci-libs/ldl
+
+app-crypt/dieharder
+sci-mathematics/ent
+
+sci-electronics/systemc
+

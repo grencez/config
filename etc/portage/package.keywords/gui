@@ -1,5 +1,18 @@
 
-<=dev-util/gtk-doc-am-1.20
 x11-libs/gdk-pixbuf
 
+xfce-base/xfce4-meta
+xfce-base/garcon
+xfce-base/xfconf
+xfce-base/libxfce4util
+xfce-base/xfce4-session
+xfce-base/xfwm4
+xfce-base/xfce4-panel
+xfce-base/libxfce4ui
+xfce-base/exo
+xfce-base/xfce4-appfinder
+xfce-base/xfdesktop
+xfce-base/xfce4-settings
+xfce-base/thunar
+xfce-extra/tumbler
 

@@ -17,4 +17,7 @@ sci-libs/openfoam doc examples
 sci-libs/blas-atlas doc
 sci-libs/lapack-atlas doc
 sci-libs/gsl cblas-external
+dev-libs/gmp static-libs
+
+sci-visualization/gnuplot gd lua latex
 

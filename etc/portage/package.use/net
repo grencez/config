@@ -3,6 +3,7 @@ dev-libs/leveldb -snappy
 net-misc/bfgminer cpumining scrypt
 net-fs/cifs-utils ads
 net-fs/samba winbind
+net-p2p/bitcoin-qt qt4
 
 www-plugins/mozplugger xembed
 mail-client/mutt berkdb imap smtp sasl pop zlib
@@ -19,7 +20,10 @@ net-libs/opal h323 sip sipim
 net-libs/libmicrohttpd messages
 
 net-irc/irssi perl
-net-analyzer/wireshark gtk
+net-im/pidgin spell xscreensaver
+
+net-analyzer/wireshark lua
+
 net-analyzer/metasploit gui postgres
 net-analyzer/nmap gtk
 net-analyzer/driftnet gtk
@@ -27,7 +31,6 @@ net-misc/aria2 bittorrent
 www-client/elinks ftp javascript
 sys-fs/ntfsprogs fuse
 net-proxy/tsocks tordns
-net-im/pidgin spell xscreensaver
 www-client/firefox java -wifi
 net-libs/xulrunner java -wifi
 
@@ -36,4 +39,10 @@ net-libs/webkit-gtk perl python
 net-misc/rdesktop kerberos
 
 net-misc/tor transparent-proxy web
+net-libs/libproxy -webkit
+
+net-misc/dropbox -X
+net-misc/youtube-dl offensive
+
+www-plugins/chrome-binary-plugins -widevine
 

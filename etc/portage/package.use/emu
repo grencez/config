@@ -1,5 +1,7 @@
 
 games-emulation/visualboyadvance gtk
-app-emulation/wine -opencl -udisks
+app-emulation/wine -opencl -udisks dos netapi samba -vaapi
 app-emulation/qemu doc
+app-emulation/wine linguas_ja linguas_en_US
+app-emulation/lxc cgmanager
 

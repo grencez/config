@@ -1,8 +1,7 @@
 
->=sys-kernel/linux-headers-4.3
+>=sys-kernel/linux-headers-4.10
 >=sci-mathematics/isabelle-2013
 app-vim/gtk-syntax
-=app-text/poppler-0.26.5
 
 >=net-libs/webkit-gtk-2
 dev-lang/ruby

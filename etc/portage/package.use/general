@@ -1,4 +1,5 @@
 
+app-text/acroread html
 media-gfx/k3d imagemagick
 sci-visualization/paraview boost
 sci-libs/vtk boost
@@ -18,10 +19,11 @@ dev-tex/tex4ht java
 
 sys-kernel/gentoo-sources -symlink
 
+x11-terms/mrxvt linguas_ko linguas_ja linguas_zh_CN linguas_zh_TW
+
 app-office/dia cairo
 
 media-gfx/graphviz doc examples
-sci-visualization/gnuplot gd
 
 app-office/libreoffice gtk
 dev-db/hsqldb java6
@@ -30,5 +32,4 @@ dev-db/sqlite extensions fts3 secure-delete
 dev-libs/lzo static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
-sys-fs/cryptsetup udev
 

@@ -1,10 +1,27 @@
 
-sys-fs/cryptsetup static static-libs
+app-shells/dash libedit
+
+sys-fs/cryptsetup static static-libs -gcrypt openssl
+dev-libs/openssl static-libs
 sys-libs/e2fsprogs-libs static-libs
 sys-fs/lvm2 static-libs
 
-sys-libs/zlib minizip
+sys-libs/zlib minizip static-libs
 sys-fs/udev gudev keymap static-libs
 virtual/udev gudev keymap static-libs
+virtual/libudev static-libs
+virtual/libgudev static-libs
+dev-libs/libgudev static-libs
 sys-libs/talloc python
+
+sys-cluster/openmpi mpi-threads heterogeneous romio
+sys-apps/hwloc -opencl
+
+sys-libs/libapparmor python
+
+app-portage/layman subversion
+
+sys-libs/libsemanage python
+app-admin/setools python
+sys-libs/libselinux python
 

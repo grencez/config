@@ -6,8 +6,7 @@ PS1='\[\033[01;32m\]\u\[\033[00m\]\$ '
 umask 022
 
 #export INTEL_LICENSE_FILE=$HOME/.static/lic
-export STATIC_DIR="$HOME/.st"
-export PATH="$HOME/local/bin:$STATIC_DIR/bin":$PATH
+export PATH="$HOME/local/bin:$HOME/bin:$PATH"
 export PATHSETP=1
 
 #export LANG="en_GB.UTF-8"

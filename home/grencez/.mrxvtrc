@@ -125,7 +125,8 @@ Mrxvt.borderLess:               True
 #Mrxvt.xftAntialias:		1
 #Mrxvt.font: -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
 #Mrxvt.boldFont: -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso8859-1
-mrxvt.font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
+mrxvt.font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+#mrxvt.font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
 Mrxvt.boldFont: -misc-fixed-bold-r-normal--20-200-75-75-c-100-iso10646-1
 
 # The options below are better set using ~/.fonts.config. Mrxvt will use the
@@ -341,6 +342,10 @@ Mrxvt.macro.Primary+Add+Ctrl+slash: NewTab "(Tab %n scrollback)" \!view +"syn of
 Mrxvt.macro.Primary+Shift+Return:	Esc \ec
 Mrxvt.macro.Primary+Add+Shift+Return:	Str ^M
 
+# Copy/Paste
+Mrxvt.macro.Ctrl+Shift+C: Exec !/usr/bin/xclip -o | /usr/bin/xclip -selection clipboard
+Mrxvt.macro.Ctrl+Shift+V: Paste CLIPBOARD
+
 
 # ---------------------------------------------------------------------------- #
 
@@ -397,6 +402,7 @@ FvwmConsole.scrollBar:		    False
 Root.initProfileList:		    1
 Root.tintColor:			    #002000
 Root.itabBackground:		    #002000
+
 
 # ---------------------------------------------------------------------------- #
 # vim: set ft=mrxvtrc ts=8 sts=4:

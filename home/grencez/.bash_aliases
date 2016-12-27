@@ -16,5 +16,7 @@ alias info='info --vi-keys'
 
 alias vnc='vncviewer'
 
+alias pstack='gdb -batch -ex bt -p'
 alias mplayer='mplayer -stop-xscreensaver'
+alias maxima='rlwrap maxima'
 

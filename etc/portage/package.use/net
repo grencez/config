@@ -41,8 +41,9 @@ net-misc/rdesktop kerberos
 net-misc/tor transparent-proxy web
 net-libs/libproxy -webkit
 
-net-misc/dropbox -X
+net-misc/dropbox X
 net-misc/youtube-dl offensive
 
 www-plugins/chrome-binary-plugins -widevine
+www-client/chromium l10n_ja l10n_ko l10n_zh-CN l10n_zh-TW
 
